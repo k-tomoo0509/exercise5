@@ -28,12 +28,13 @@ function result() {
 
     let xItem,yItem,zItem;
 
-    randomValueFromArray(xItem);
-    randomValueFromArray(yItem);
-    randomValueFromArray(zItem);
+    randomValueFromArray(insertX);
+    randomValueFromArray(insertY);
+    randomValueFromArray(insertZ);
 
     newStory = newStory.replace(':insertX:',xItem);
-    newStory = newStory.replace(':insertY:',ysItem);
+    newStory = newStory.replace(':insertX:',xItem);
+    newStory = newStory.replace(':insertY:',yItem);
     newStory = newStory.replace(':insertZ:',zItem);
 
   if(customName.value !== '') {
@@ -43,8 +44,8 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    let weight = Math.round(300*0.0714286+'stone');
-    let temperature =  Math.round((94-32)*5/9+'centigrade');
+    let weight = Math.round(300*0.0714286)+'stone';
+    let temperature =  Math.round((94-32)*5/9)+'centigrade';
     newStory = newStory.replace('94 farenheit',temperature);
     newStory = newStory.replace('300 pounds',weight);
 
