@@ -28,9 +28,9 @@ function result() {
 
     let xItem,yItem,zItem;
 
-    randomValueFromArray(insertX);
-    randomValueFromArray(insertY);
-    randomValueFromArray(insertZ);
+    xItem = randomValueFromArray(insertX);
+    yItem = randomValueFromArray(insertY);
+    zItem = randomValueFromArray(insertZ);
 
     newStory = newStory.replace(':insertx:',xItem);
     newStory = newStory.replace(':insertx:',xItem);
